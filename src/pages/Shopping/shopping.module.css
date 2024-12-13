@@ -1,0 +1,82 @@
+.grid {
+  display: grid;
+  gap: 10px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  margin-top: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.grid::-webkit-scrollbar {
+  display: none;
+}
+
+
+.card {
+  position: relative;
+
+  /* border: solid 1px silver; */
+  border-radius: 6px;
+  margin: 3px;
+  height: 300px;
+  border: solid 1px silver;
+
+}
+
+.card:hover  {
+  box-shadow:2px 3px 3px 1px lightgreen;
+
+
+}
+
+.header {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  color: #fff;
+  background-color: #24a0ed;
+  padding: 3px;
+  text-align: center;
+  z-index: 99999;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  background-color: gray;
+  padding: 5px;
+  width: -webkit-fill-available;
+  text-align: center;
+  background-color: #24a0ed;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.card button {
+  background: #fff;
+  border: none;
+  color: green;
+  padding: 0px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.card button:hover {
+  background: #ffcc00;
+  color: #000;
+}
+
+.image {
+  height: 200px;
+  max-width: -webkit-fill-available;
+}
+
+.price {
+  color: blue;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+}

@@ -1,0 +1,134 @@
+.info {
+  margin-top: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns:35px 200px 200px 300px 60px;
+  border-top: solid 1px silver;
+  border-right: solid 1px silver;
+  width: fit-content;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow:2px 2px 6px 2px silver;
+  margin-top:3px;
+}
+
+.grid div {
+  color:#000;
+  font-weight: bold;
+  padding: 5px 5px;
+  border-left: solid 1px silver;
+  border-bottom: solid 1px silver;
+}
+
+.grid div:nth-child(-n + 5) {
+  background-color: steelblue;
+  font-weight: bold;
+  color: #fff;
+}
+
+.grid div:nth-child(4n) { /*last column*/
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+
+.grid input {
+  background-color: #fff;
+  color:#000;
+  font-weight: bold;
+  border: none;
+  font-size: 16px;
+  width: 60px;
+  width: fit-content;
+  padding:0 0 0 4px;
+}
+
+.grid input:focus {
+  outline: none;
+}
+
+.grid div span {
+  display: block;
+}
+
+.readOnlyTxt {
+  height: 77%;
+  width: -webkit-fill-available;
+}
+
+.readOnlyTxt:focus {
+  outline: dotted 1px silver;
+}
+
+.onEmpty::before {
+  content: "Please type to Enter";
+}
+
+.jsonView {
+  width: 700px;
+  border: solid 1px silver;
+  font-size: 12px;
+  height: 350px;
+  overflow: scroll;
+}
+
+.jsonHdr {
+  margin-top: 20px;
+}
+
+.infoTxt {
+  font-weight: bold;
+  max-width: 700px;
+}
+
+.arrowIconDes::after {
+  margin-left:5px;
+  content: "\25bc";
+  font-size: 0.6rem;
+}
+
+.arrowIconAsc::after {
+  margin-left:5px;
+  content: '\25b2';
+  font-size: 0.6rem;
+}
+
+#username {
+  cursor:pointer
+}
+
+.field {
+  cursor:pointer;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.selRow {
+  background-color: #c3e6fc;
+}
+
+.deleteIcon {
+  cursor: pointer;
+  width:fit-content
+}
+
+.pageContainer {
+  width:fit-content
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  margin-right:5px;
+}
+
+.searchInput {
+  border:solid 1px silver;
+  font-size:18px;
+  border-radius:6px;
+}

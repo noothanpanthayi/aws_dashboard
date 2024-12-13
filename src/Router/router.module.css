@@ -1,0 +1,15 @@
+.container {
+  /* max-width: 1024px; */
+  max-width: 1290px;
+  font-size:14px;
+  margin: 0 auto;
+  z-index: -1;
+}
+
+@media (max-width: 1600px) {
+  .container {
+    margin: 0 auto;
+    max-width: 1024px;
+    z-index: -1;
+  }
+}
